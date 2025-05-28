@@ -19,7 +19,7 @@ const Signup = async (req, res) => {
     }
 
     //  Verify captcha with Google
-    const secretKey ="6LcwBDArAAAAAPogGA5kVW09sys_fS5_TNIt3Xwv"; // Get this from Google reCAPTCHA admin console
+    const secretKey ="6LfSi0srAAAAAH40JSIBNNz9YiTXH9MbJhnPQaE9"; // Get this from Google reCAPTCHA admin console
     const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${captchaToken}`;
 
     const captchaResponse = await axios.post(verifyUrl);
